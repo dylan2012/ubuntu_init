@@ -37,7 +37,7 @@ function app_update_init() {
   fi
 
   # 下载 vim 自定义配置文件
-  wget https://raw.githubusercontent.com/Tsanfer/Setup_server/main/.vimrc -P ~
+  wget https://raw.githubusercontent.com/dylan2012/ubuntu_init/main/.vimrc -P ~
 
   neofetch
 }
