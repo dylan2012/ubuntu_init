@@ -119,14 +119,14 @@ setSYSCTL() {
 
 		net.ipv4.conf.all.rp_filter = 2
 		net.ipv4.ip_forward = 1
-	EOF
+EOF
 	sysctl -p
 	
 	#设置
 	cat >> /etc/security/limits.conf <<EOF
 	*           soft   nofile       65535
 	*           hard   nofile       65535
-	EOF
+EOF
 	
 	#设置上海时区
 	timedatectl set-local-rtc 1
